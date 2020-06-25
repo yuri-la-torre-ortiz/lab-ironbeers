@@ -1,0 +1,7 @@
+<!-- random-beer.hbs -->
+<div>
+{{#each randombeer}}
+<!--'randombeer' is used in app.js as a result from calling the PunkApi -->
+    {{> beerpartial this}}
+{{/each}}
+</div>
