@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
   punkAPI.getBeers().then((beers) => {
     //Iteration 3.2  'allbeers' is key we create & used in beers.hbs, along with value 'beers'
-    res.render('beers', {allbeers: beers});
+    res.render('beers' /*this refers to our beers.hbs file*/, {allbeers: beers});
   }
     ).catch(
       error => console.log(error)
